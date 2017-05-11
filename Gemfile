@@ -9,11 +9,22 @@ gem 'jquery-rails', '4.0.3'
 gem 'turbolinks',   '2.3.0'
 gem 'jbuilder',     '2.2.3'
 gem 'sdoc',         '0.4.0', group: :doc
+gem 'haml-rails', '~> 1.0.0'
+
+
+# see stackoverflow http://stackoverflow.com/questions/41207432
+gem 'thor', '0.19.1', '!=0.19.2', '!=0.19.3', '!=0.19.4'  
 
 group :development, :test do
-  gem 'byebug',      '3.4.0'
   gem 'web-console', '2.0.0.beta3'
   gem 'spring',      '1.1.3'
+  gem 'byebug',      '8.2.5'
+  gem 'pry'
+  gem 'pry-byebug'
+  gem 'pry-doc'
+  gem 'pry-rails'
+  gem 'pry-rescue'
+  
 end
 
 group :production do
